@@ -13,6 +13,7 @@
 		88F6388D215A8061003F0E80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F6388B215A8061003F0E80 /* Main.storyboard */; };
 		88F6388F215A8061003F0E80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88F6388E215A8061003F0E80 /* Assets.xcassets */; };
 		88F63892215A8061003F0E80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F63890215A8061003F0E80 /* LaunchScreen.storyboard */; };
+		88F638A4215A8B5D003F0E80 /* ReYunTracking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F638A3215A8B5D003F0E80 /* ReYunTracking.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		88F6388E215A8061003F0E80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88F63891215A8061003F0E80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88F63893215A8061003F0E80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88F638A2215A8B5D003F0E80 /* Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tracking.h; sourceTree = "<group>"; };
+		88F638A3215A8B5D003F0E80 /* ReYunTracking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = ReYunTracking.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88F638A4215A8B5D003F0E80 /* ReYunTracking.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +46,7 @@
 		88F63876215A8061003F0E80 = {
 			isa = PBXGroup;
 			children = (
+				88F638A1215A8B5D003F0E80 /* Tracking */,
 				88F63881215A8061003F0E80 /* TrackingDemo */,
 				88F63880215A8061003F0E80 /* Products */,
 			);
@@ -77,6 +82,16 @@
 				88F63883215A8061003F0E80 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		88F638A1215A8B5D003F0E80 /* Tracking */ = {
+			isa = PBXGroup;
+			children = (
+				88F638A2215A8B5D003F0E80 /* Tracking.h */,
+				88F638A3215A8B5D003F0E80 /* ReYunTracking.a */,
+			);
+			name = Tracking;
+			path = ../Tracking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +291,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TrackingDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Tracking",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.reyun.io.TrackingDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -287,6 +306,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TrackingDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Tracking",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.reyun.io.TrackingDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
