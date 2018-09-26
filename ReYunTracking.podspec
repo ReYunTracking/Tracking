@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.preserve_paths = 'Tracking/**'
 
-  s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/../Tracking/Chartboost"' }
+  s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/../Tracking"' }
   
   s.frameworks = 'SystemConfiguration','AdSupport','CoreTelephony','Security','CoreMotion'
 
