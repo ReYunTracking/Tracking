@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.source_files  = 'Tracking/*.h'
 
-  s.preserve_paths = 'Tracking/libReYunTracking.a'
+  s.preserve_paths = 'Tracking/*.a'
 
   s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/ReYunTracking/Tracking/**"' }
   
