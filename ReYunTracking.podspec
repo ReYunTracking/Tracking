@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ReYunTracking"
-  s.version      = "0.0.4"
+  s.version      = "1.3.1"
   s.summary      = "ReYun Tracking SDK"
   s.homepage         = "https://github.com/ReYunTracking/Tracking"
 
@@ -15,9 +15,11 @@ Pod::Spec.new do |s|
   
   s.source        = { :git => "https://github.com/ReYunTracking/Tracking.git", :tag => s.version }
 
-  s.source_files  = 'Tracking','Tracking/Tracking.h'
+  s.source_files  = 'Tracking/*.h'
 
-  s.vendored_libraries = 'Tracking/ReYunTracking.a'
+  s.preserve_paths = 'Tracking/**'
+
+  s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/../Tracking/Chartboost"' }
   
   s.frameworks = 'SystemConfiguration','AdSupport','CoreTelephony','Security','CoreMotion'
 
